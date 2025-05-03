@@ -1,0 +1,11 @@
+{
+    "name": "KRG Generator",
+    "image": "mcr.microsoft.com/devcontainers/python:3.9",
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {
+        "version": "16"
+      }
+    },
+    "postCreateCommand": "pip install flask flask-cors spacy && python -m spacy download en_core_web_sm && npm install --prefix frontend"
+  }
+  
